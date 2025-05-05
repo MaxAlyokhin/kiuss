@@ -7,7 +7,7 @@
         presented by passersby who are not ready for such messages, and as a result of which there is the
         <a href="https://instructions.stranno.su/en/#the_moment_of_detection" target="_blank">moment of detection</a>. Also see the project with <a href="/strange_posters">posters</a>.
       </div>
-      <div v-for="(absurd_inscriptions, index) in absurd_inscriptionsArray" :index="index" :key="absurd_inscriptions.index">
+      <div v-for="(absurd_inscriptions, index) in absurd_inscriptionsArray" :index="index" class="item" :key="absurd_inscriptions.index">
         <h3>{{ absurd_inscriptions.title }}</h3>
 
         <div class="explication" v-html="absurd_inscriptions.ebody"></div>
@@ -24,7 +24,7 @@
         таким сообщениям, в результате чего и возникает <a href="https://instructions.stranno.su/ru/#the_moment_of_detection" target="_blank">момент обнаружения</a>. Также смотрите проект с
         <a href="/strange_posters">постерами</a>.
       </div>
-      <div v-for="(absurd_inscriptions, index) in absurd_inscriptionsArray" :index="index" :key="absurd_inscriptions.index">
+      <div v-for="(absurd_inscriptions, index) in absurd_inscriptionsArray" :index="index" class="item" :key="absurd_inscriptions.index">
         <h3>{{ absurd_inscriptions.title }}</h3>
 
         <div class="explication" v-html="absurd_inscriptions.body"></div>

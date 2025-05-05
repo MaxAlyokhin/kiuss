@@ -9,7 +9,7 @@
         </div>
       </div>
 
-      <div v-for="(here_was_vasya, index) in here_was_vasyaArray" :index="index" :key="here_was_vasya.index">
+      <div v-for="(here_was_vasya, index) in here_was_vasyaArray" :index="index" class="item item--full" :key="here_was_vasya.index">
         <div class="explication" v-html="here_was_vasya.ebody"></div>
         <div class="img" v-lazy-container="{ selector: 'img' }">
           <img :data-src="here_was_vasya.img" />
@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <div v-for="(here_was_vasya, index) in here_was_vasyaArray" :index="index" :key="here_was_vasya.index">
+      <div v-for="(here_was_vasya, index) in here_was_vasyaArray" :index="index" class="item item--full" :key="here_was_vasya.index">
         <div v-html="here_was_vasya.body" class="explication"></div>
         <div class="img" v-lazy-container="{ selector: 'img' }">
           <img :data-src="here_was_vasya.img" />

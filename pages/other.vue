@@ -2,7 +2,7 @@
   <div class="sub-container">
     <div v-if="this.$store.state.languageMarker">
       <div class="annotation">Other</div>
-      <div v-for="(other, index) in otherArray" :index="index" :key="other.index">
+      <div v-for="(other, index) in otherArray" :index="index" class="item" :key="other.index">
         <div class="explication" v-html="other.ebody"></div>
         <h3 v-html="other.title"></h3>
 
@@ -13,7 +13,7 @@
     </div>
     <div v-else>
       <div class="annotation">Разное</div>
-      <div v-for="(other, index) in otherArray" :index="index" :key="other.index">
+      <div v-for="(other, index) in otherArray" :index="index" class="item" :key="other.index">
         <div class="explication" v-html="other.body"></div>
         <h3 v-html="other.title"></h3>
 

@@ -7,7 +7,7 @@
         all the material that makes it up around you.
       </div>
 
-      <div v-for="(concrete_around, index) in concrete_aroundArray" :index="index" :key="concrete_around.index">
+      <div v-for="(concrete_around, index) in concrete_aroundArray" :index="index" class="item item--full" :key="concrete_around.index">
         <h3>{{ concrete_around.title }}</h3>
 
         <div class="explication" v-html="concrete_around.ebody"></div>
@@ -23,7 +23,7 @@
         отсылает непосредственно к бетону, сколько вообще ко всем искусственным материалам, из которых формируются города, — это и асфальт, и кирпич, и металл, и пластик — что позволяет как бы
         "обнаружить" вокруг себя город и всё материальное из чего он состоит.
       </div>
-      <div v-for="(concrete_around, index) in concrete_aroundArray" :index="index" :key="concrete_around.index">
+      <div v-for="(concrete_around, index) in concrete_aroundArray" :index="index" class="item item--full" :key="concrete_around.index">
         <h3>{{ concrete_around.title }}</h3>
 
         <div class="explication" v-html="concrete_around.body"></div>

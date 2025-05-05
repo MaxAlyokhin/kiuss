@@ -9,6 +9,7 @@
         v-for="(casual_passerby, index) in casual_passerbyArray"
         :index="index"
         :key="casual_passerby.index"
+        class="item item--full"
       >
         <h3>{{ casual_passerby.title }}</h3>
 
@@ -29,6 +30,7 @@
         v-for="(casual_passerby, index) in casual_passerbyArray"
         :index="index"
         :key="casual_passerby.index"
+        class="item item--full"
       >
         <h3>{{ casual_passerby.title }}</h3>
 

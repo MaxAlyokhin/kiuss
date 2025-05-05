@@ -9,7 +9,7 @@
         wardrobe attendants. Our work reminds us: behind the hypocritical facade of the Cossack paradise is the absence of the past, the helplessness of the present and the impossibility of the
         future."
       </div>
-      <div v-for="(scaffolding, index) in scaffoldingArray" :index="index" :key="scaffolding.index">
+      <div v-for="(scaffolding, index) in scaffoldingArray" :index="index" class="item item--full" :key="scaffolding.index">
         <h3>{{ scaffolding.title }}</h3>
 
         <div class="explication" v-html="scaffolding.body"></div>
@@ -28,7 +28,7 @@
         связанных с существованием и развитием города. Если Краснодар — музей, то его жители либо пассивные зрители, либо спящие гардеробщики. Наша работа напоминает: за лицемерным фасадом казачьего
         рая скрывается отсутствие прошлого, беспомощность настоящего и невозможность будущего.
       </div>
-      <div v-for="(scaffolding, index) in scaffoldingArray" :index="index" :key="scaffolding.index">
+      <div v-for="(scaffolding, index) in scaffoldingArray" :index="index" class="item item--full" :key="scaffolding.index">
         <h3>{{ scaffolding.title }}</h3>
 
         <div class="explication" v-html="scaffolding.body"></div>

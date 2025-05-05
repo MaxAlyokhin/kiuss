@@ -131,10 +131,7 @@ img
     padding: 10px
     div
       margin-bottom: 10px
-    .img
-      margin-bottom: 30px
-      // &:last-child
-      //   margin-bottom: 30px
+
   .explication
     font-family: sf-medium
     font-size: .8em
@@ -181,7 +178,12 @@ a:hover
 
 img
   width: 100%
-  height: inherit !important
+  height: fit-content
+  object-fit: contain
+  max-height: 80vh
+
+  @media ($mobile)
+    height: auto
 
 h3
   text-align: center
@@ -279,3 +281,15 @@ iframe
     margin: 0
     padding: 0
     transform: translate3d(0, 0, 0)
+
+.item
+    width: fit-content
+    margin: 0 auto
+    padding: 25px 0
+
+    &--full
+        width: 100%
+
+        img
+            height: auto
+            max-height: none

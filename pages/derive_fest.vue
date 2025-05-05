@@ -13,7 +13,7 @@
           <br />We also made a <a href="https://yandex.ru/maps/-/CBBGvGHqdB" target="_blank">map</a> of the drifting
         </div>
       </div>
-      <div v-for="(drift_fest, index) in drift_festArray" :index="index" :key="drift_fest.index">
+      <div v-for="(drift_fest, index) in drift_festArray" :index="index" class="item" :key="drift_fest.index">
         <h3>{{ drift_fest.title }}</h3>
 
         <div class="explication" v-html="drift_fest.body"></div>
@@ -35,7 +35,7 @@
           >Отчёт</a
         ><br /><a href="https://yandex.ru/maps/-/CBBGvGHqdB" target="_blank">Карта дрейфующего</a>
       </div>
-      <div v-for="(drift_fest, index) in drift_festArray" :index="index" :key="drift_fest.index">
+      <div v-for="(drift_fest, index) in drift_festArray" :index="index" class="item" :key="drift_fest.index">
         <h3>{{ drift_fest.title }}</h3>
 
         <div class="explication" v-html="drift_fest.body"></div>

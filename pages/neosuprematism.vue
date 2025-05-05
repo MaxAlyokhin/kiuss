@@ -7,12 +7,14 @@
         create a void between the signifying and the signified to find new ways of linking the visual and the conceptual. Here you can see street works (murals and installations) and plates artwork.
         Within the framework of neosuprematism, see also the project <a href="/monotonous_objects">«Monotonous Objects»</a>.
       </div>
-      <div v-for="(neosuprematism, index) in neosuprematismArray" :index="index" :key="neosuprematism.index">
-        <div class="explication" v-html="neosuprematism.ebody"></div>
-        <h3 v-html="neosuprematism.title"></h3>
+      <div v-for="(neosuprematism, index) in neosuprematismArray" class="item" :index="index" :key="neosuprematism.index">
+
         <div class="img" v-lazy-container="{ selector: 'img' }">
           <img :data-src="neosuprematism.img" />
         </div>
+
+        <div class="explication" v-html="neosuprematism.ebody"></div>
+        <h3 v-html="neosuprematism.title"></h3>
       </div>
     </div>
 
@@ -23,12 +25,14 @@
         связать визуальное и концептуальное. Здесь представлены как уличные работы (муралы и инсталляции), так и станковые работы. В рамках неосупрематизма смотрите также проект
         <a href="/monotonous_objects">«Тела однотонные»</a>.
       </div>
-      <div v-for="(neosuprematism, index) in neosuprematismArray" :index="index" :key="neosuprematism.index">
-        <div class="explication" v-html="neosuprematism.body"></div>
-        <h3 v-html="neosuprematism.title"></h3>
+      <div v-for="(neosuprematism, index) in neosuprematismArray" class="item" :index="index" :key="neosuprematism.index">
+
         <div class="img" v-lazy-container="{ selector: 'img' }">
           <img :data-src="neosuprematism.img" />
         </div>
+
+        <div class="explication" v-html="neosuprematism.body"></div>
+        <h3 v-html="neosuprematism.title"></h3>
       </div>
     </div>
   </div>
@@ -55,40 +59,91 @@
             img: '/images/projects/neosuprematism/predpolozhenie.jpg',
           },
           {
-            id: 2,
+            id: 17,
             title: null,
-            body: '«Что-то связанное с полётами и довольно быстрым движением»<br>ДВП, акрил, лак, 170х137см, 2018',
-            ebody: '«Something about flying and pretty fast movement»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
-            img: '/images/projects/neosuprematism/polety.jpg',
+            body: '«Что-то здесь не так»<br>ДCП, акрил, лак, 126х62см, 2016',
+            ebody: "«Something's wrong here»<br>Fiberboard, acrylic, lacquer, 126x62cm, 2016",
+            img: '/images/projects/neosuprematism/ne_tak.jpg',
           },
           {
-            id: 3,
+            id: 37,
             title: null,
-            body: '«Составная механическая сущность в виде застывших распределённых пластин»<br>ДВП, акрил, лак, 170х137см, 2018',
-            ebody: '«Composite mechanical entity in the form of frozen distributed plates»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
-            img: '/images/projects/neosuprematism/sostavnaya.jpg',
+            body: '«Во мраке»<br>ДСП, акрил, лак, 50х90см, 2014',
+            ebody: '«In the Darkness»<br>Fiberboard, acrylic, lacquer, 50x90cm, 2014',
+            img: '/images/projects/neosuprematism/darkness.jpg',
           },
           {
-            id: 4,
+            id: 44,
             title: null,
-            body: '«Зеркализация и дубликация на неоднородном фоне»<br>ДВП, акрил, лак, 170х137см, 2018',
-            ebody: '«Mirroring and duplicating on a heterogeneous background»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
-            img: '/images/projects/neosuprematism/zerkalizacia.jpg',
+            body: '«Пронзая спокойствие»<br>ДВП, акрил, лак, 65х60см, 2013',
+            ebody: '«Piercing calm»<br>Fiberboard, acrylic, lacquer, 65x60cm, 2013',
+            img: '/images/projects/neosuprematism/impaling_calm.jpg',
           },
           {
-            id: 5,
+            id: 39,
             title: null,
-            body: '«.»<br>ДВП, акрил, лак, 170х137см, 2018',
-            ebody: '«.»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
-            img: '/images/projects/neosuprematism/tochka.jpg',
+            body: '«Вибрация»<br>Фанера, акрил, лак, 100х100см, 2013',
+            ebody: '«Vibration»<br>Plywood, acrylic, lacquer, 100x100cm, 2013',
+            img: '/images/projects/neosuprematism/vibration.jpg',
           },
           {
-            id: 6,
+            id: 46,
             title: null,
-            body: '«Вторжение в кромешный синий и противостояние ему»<br>ДВП, акрил, лак, 170х137см, 2018',
-            ebody: '«Invading the blue and confronting it»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
-            img: '/images/projects/neosuprematism/vtorzhenie.jpg',
+            body: '«Определитель ветра»<br>Акрил, 2013',
+            ebody: '«Wind Detector»<br>Acrylic, 2013',
+            img: '/images/projects/neosuprematism/the_determinant_of_the_wind.jpg',
           },
+          {
+            id: 48,
+            title: null,
+            body: '«Ребристость»<br>Акрил, 2013',
+            ebody: '«Ribbing»<br>Acrylic, 2013',
+            img: '/images/projects/neosuprematism/ribbing.jpg',
+          },
+
+          {
+            id: 58,
+            title: "<iframe src='https://www.youtube.com/embed/Hzj3nEcvar0?modestbranding=1;rel=0;autohide=1;controls=1;' frameborder='0' allowfullscreen></iframe>",
+            body: '«Выстрел»<br>Акрил, 2012',
+            ebody: '«The Shot»<br>Acrylic, 2012',
+            img: '/images/projects/neosuprematism/shot_street.jpg',
+          },
+          {
+            id: 61,
+            title: null,
+            body: '«Неосупрематическая инсталляция #1»<br>ПВХ, акрил, 2012',
+            ebody: '«The Neosuprematic installation #1»<br>PVC, acrylic, 2012',
+            img: '/images/projects/neosuprematism/1.jpg',
+          },
+          {
+            id: 40,
+            title: null,
+            body: '«Упорядоченность среди сумбурности»<br>Акрил, 2013',
+            ebody: '«Homogeneity in the midst of confusion»<br>Acrylic, 2013',
+            img: '/images/projects/neosuprematism/order_among_chaotic.jpg',
+          },
+          {
+            id: 38,
+            title: null,
+            body: '«Лёгкость»<br>ДСП, акрил, лак, 60х60см, 2013',
+            ebody: '«Lightness»<br>Fiberboard, acrylic, lacquer, 60x60cm, 2013',
+            img: '/images/projects/neosuprematism/lyog.jpg',
+          },
+          {
+            id: 57,
+            title: null,
+            body: '«Сквозняк»<br>Холст, акрил, 40х50см, 2012',
+            ebody: '«Draught»<br>Сanvas, acrylic, 40х50cm, 2012',
+            img: '/images/projects/neosuprematism/skwoz.jpg',
+          },
+          {
+            id: 25,
+            title: null,
+            body: '«Сильный сквозняк»<br>ДВП, акрил, лак, 72х102см, 2015',
+            ebody: "«There's a lot of draught»<br>Fiberboard, acrylic, lacquer, 72x102cm, 2015",
+            img: '/images/projects/neosuprematism/strong_draft.jpg',
+          },
+
           {
             id: 7,
             title: null,
@@ -96,20 +151,7 @@
             ebody: '«A radical nuance that breaks a lot of rules and changes the meaning of the composition»<br>Fiberboard, acrylic, lacquer, 99x51cm, 2018',
             img: '/images/projects/neosuprematism/nuans.jpg',
           },
-          {
-            id: 8,
-            title: null,
-            body: '«Внезапный энтузиазм на фоне приподнятого настроения,<br>следствием которого являются четыре синие фигуры на зелёной плоскости»<br>ДСП, акрил, лак, 98х62см, 2018',
-            ebody: '«Sudden enthusiasm against the backdrop of an elevated mood, <br>the result of which are four blue figures on a green plane»<br>Fiberboard, acrylic, lacquer, 98x62cm, 2018',
-            img: '/images/projects/neosuprematism/intuziazm.jpg',
-          },
-          {
-            id: 9,
-            title: null,
-            body: '«Апельсиновый архитектурный сон в нежно-голубом пространстве»<br>ДВП, акрил, лак, 170х137см, 2018',
-            ebody: '«Orange architectural sleep in a gentle blue space»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
-            img: '/images/projects/neosuprematism/son.jpg',
-          },
+
           {
             id: 10,
             title: null,
@@ -152,13 +194,7 @@
             ebody: '«A pause in fussiness»<br>Fiberboard, acrylic, lacquer, 138x140cm, 2016',
             img: '/images/projects/neosuprematism/pauza.jpg',
           },
-          {
-            id: 17,
-            title: null,
-            body: '«Что-то здесь не так»<br>ДCП, акрил, лак, 126х62см, 2016',
-            ebody: "«Something's wrong here»<br>Fiberboard, acrylic, lacquer, 126x62cm, 2016",
-            img: '/images/projects/neosuprematism/ne_tak.jpg',
-          },
+
           {
             id: 18,
             title: null,
@@ -208,13 +244,7 @@
             ebody: '«The Long Hair»<br>Fiberboard, acrylic, lacquer, 48x79cm, 2015',
             img: '/images/projects/neosuprematism/long_hair.jpg',
           },
-          {
-            id: 25,
-            title: null,
-            body: '«Сильный сквозняк»<br>ДВП, акрил, лак, 72х102см, 2015',
-            ebody: "«There's a lot of draught»<br>Fiberboard, acrylic, lacquer, 72x102cm, 2015",
-            img: '/images/projects/neosuprematism/strong_draft.jpg',
-          },
+
           {
             id: 26,
             title: null,
@@ -292,34 +322,7 @@
             ebody: '«They Smoke»<br>Fiberboard, acrylic, lacquer, 80x50cm, 2014',
             img: '/images/projects/neosuprematism/smoke.jpg',
           },
-          {
-            id: 37,
-            title: null,
-            body: '«Во мраке»<br>ДСП, акрил, лак, 50х90см, 2014',
-            ebody: '«In the Darkness»<br>Fiberboard, acrylic, lacquer, 50x90cm, 2014',
-            img: '/images/projects/neosuprematism/darkness.jpg',
-          },
-          {
-            id: 38,
-            title: null,
-            body: '«Лёгкость»<br>ДСП, акрил, лак, 60х60см, 2013',
-            ebody: '«Lightness»<br>Fiberboard, acrylic, lacquer, 60x60cm, 2013',
-            img: '/images/projects/neosuprematism/lyog.jpg',
-          },
-          {
-            id: 39,
-            title: null,
-            body: '«Вибрация»<br>Фанера, акрил, лак, 100х100см, 2013',
-            ebody: '«Vibration»<br>Plywood, acrylic, lacquer, 100x100cm, 2013',
-            img: '/images/projects/neosuprematism/vibration.jpg',
-          },
-          {
-            id: 40,
-            title: null,
-            body: '«Упорядоченность среди сумбурности»<br>Акрил, 2013',
-            ebody: '«Homogeneity in the midst of confusion»<br>Acrylic, 2013',
-            img: '/images/projects/neosuprematism/order_among_chaotic.jpg',
-          },
+
           {
             id: 41,
             title: null,
@@ -342,19 +345,34 @@
             img: '/images/projects/neosuprematism/concrete_block.jpg',
           },
           {
-            id: 44,
+            id: 2,
             title: null,
-            body: '«Пронзая спокойствие»<br>ДВП, акрил, лак, 65х60см, 2013',
-            ebody: '«Piercing calm»<br>Fiberboard, acrylic, lacquer, 65x60cm, 2013',
-            img: '/images/projects/neosuprematism/impaling_calm.jpg',
+            body: '«Что-то связанное с полётами и довольно быстрым движением»<br>ДВП, акрил, лак, 170х137см, 2018',
+            ebody: '«Something about flying and pretty fast movement»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
+            img: '/images/projects/neosuprematism/polety.jpg',
           },
           {
-            id: 46,
+            id: 3,
             title: null,
-            body: '«Определитель ветра»<br>Акрил, 2013',
-            ebody: '«Wind Detector»<br>Acrylic, 2013',
-            img: '/images/projects/neosuprematism/the_determinant_of_the_wind.jpg',
+            body: '«Составная механическая сущность в виде застывших распределённых пластин»<br>ДВП, акрил, лак, 170х137см, 2018',
+            ebody: '«Composite mechanical entity in the form of frozen distributed plates»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
+            img: '/images/projects/neosuprematism/sostavnaya.jpg',
           },
+          {
+            id: 4,
+            title: null,
+            body: '«Зеркализация и дубликация на неоднородном фоне»<br>ДВП, акрил, лак, 170х137см, 2018',
+            ebody: '«Mirroring and duplicating on a heterogeneous background»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
+            img: '/images/projects/neosuprematism/zerkalizacia.jpg',
+          },
+          {
+            id: 5,
+            title: null,
+            body: '«.»<br>ДВП, акрил, лак, 170х137см, 2018',
+            ebody: '«.»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
+            img: '/images/projects/neosuprematism/tochka.jpg',
+          },
+
           {
             id: 47,
             title: null,
@@ -362,13 +380,7 @@
             ebody: '«Comfort»<br>Acrylic, 2013',
             img: '/images/projects/neosuprematism/comfort.jpg',
           },
-          {
-            id: 48,
-            title: null,
-            body: '«Ребристость»<br>Акрил, 2013',
-            ebody: '«Ribbing»<br>Acrylic, 2013',
-            img: '/images/projects/neosuprematism/ribbing.jpg',
-          },
+
           {
             id: 49,
             title: null,
@@ -389,6 +401,20 @@
             body: '«Угол»<br>Картон, акрил, лак, 100х50см, 2013',
             ebody: '«Corner»<br>Cardboard, acrylic, lacquer, 100x50cm, 2013',
             img: '/images/projects/neosuprematism/ugol.jpg',
+          },
+          {
+            id: 8,
+            title: null,
+            body: '«Внезапный энтузиазм на фоне приподнятого настроения,<br>следствием которого являются четыре синие фигуры на зелёной плоскости»<br>ДСП, акрил, лак, 98х62см, 2018',
+            ebody: '«Sudden enthusiasm against the backdrop of an elevated mood, <br>the result of which are four blue figures on a green plane»<br>Fiberboard, acrylic, lacquer, 98x62cm, 2018',
+            img: '/images/projects/neosuprematism/intuziazm.jpg',
+          },
+          {
+            id: 9,
+            title: null,
+            body: '«Апельсиновый архитектурный сон в нежно-голубом пространстве»<br>ДВП, акрил, лак, 170х137см, 2018',
+            ebody: '«Orange architectural sleep in a gentle blue space»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
+            img: '/images/projects/neosuprematism/son.jpg',
           },
           {
             id: 52,
@@ -425,20 +451,8 @@
             ebody: '«The Journey and Stokon»<br>Acrylic, 2013',
             img: '/images/projects/neosuprematism/journey.jpg',
           },
-          {
-            id: 57,
-            title: null,
-            body: '«Сквозняк»<br>Холст, акрил, 40х50см, 2012',
-            ebody: '«Draught»<br>Сanvas, acrylic, 40х50cm, 2012',
-            img: '/images/projects/neosuprematism/skwoz.jpg',
-          },
-          {
-            id: 58,
-            title: "<iframe src='https://www.youtube.com/embed/Hzj3nEcvar0?modestbranding=1;rel=0;autohide=1;controls=1;' frameborder='0' allowfullscreen></iframe>",
-            body: '«Выстрел»<br>Акрил, 2012',
-            ebody: '«The Shot»<br>Acrylic, 2012',
-            img: '/images/projects/neosuprematism/shot_street.jpg',
-          },
+
+
           {
             id: 59,
             title: null,
@@ -454,12 +468,13 @@
             img: '/images/projects/neosuprematism/explosion.jpg',
           },
           {
-            id: 61,
+            id: 6,
             title: null,
-            body: '«Неосупрематическая инсталляция #1»<br>ПВХ, акрил, 2012',
-            ebody: '«The Neosuprematic installation #1»<br>PVC, acrylic, 2012',
-            img: '/images/projects/neosuprematism/1.jpg',
+            body: '«Вторжение в кромешный синий и противостояние ему»<br>ДВП, акрил, лак, 170х137см, 2018',
+            ebody: '«Invading the blue and confronting it»<br>Fiberboard, acrylic, lacquer, 170x137cm, 2018',
+            img: '/images/projects/neosuprematism/vtorzhenie.jpg',
           },
+
           {
             id: 62,
             title: null,

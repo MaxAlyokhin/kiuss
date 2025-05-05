@@ -2,7 +2,7 @@
   <div class="sub-container">
     <div v-if="this.$store.state.languageMarker">
       <div class="annotation">A series of urban installations «The Circles»<br />PVC, acrylic, 2013</div>
-      <div v-for="(circles, index) in circlesArray" :index="index" :key="circles.index">
+      <div v-for="(circles, index) in circlesArray" :index="index" class="item item--full" :key="circles.index">
         <h3>{{ circles.title }}</h3>
 
         <div class="explication" v-html="circles.ebody"></div>
@@ -15,7 +15,7 @@
     <div v-else>
       <div class="annotation">Серия инсталляций «Круги»<br />ПВХ, акрил, 2013</div>
 
-      <div v-for="(circles, index) in circlesArray" :index="index" :key="circles.index">
+      <div v-for="(circles, index) in circlesArray" :index="index" class="item item--full" :key="circles.index">
         <h3>{{ circles.title }}</h3>
 
         <div class="explication" v-html="circles.body"></div>

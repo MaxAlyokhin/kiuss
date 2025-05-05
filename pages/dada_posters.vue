@@ -3,7 +3,7 @@
     <div v-if="this.$store.state.languageMarker">
       <div class="annotation">A series of posters «DADA»<br />Print on paper, 2012</div>
 
-      <div v-for="(dada_posters, index) in dada_postersArray" :index="index" :key="dada_posters.index">
+      <div v-for="(dada_posters, index) in dada_postersArray" :index="index" class="item item--full" :key="dada_posters.index">
         <h3>{{ dada_posters.title }}</h3>
 
         <div class="explication" v-html="dada_posters.ebody"></div>
@@ -16,7 +16,7 @@
     <div v-else>
       <div class="annotation">Серия постеров «DADA»<br />Печать на бумаге, 2012</div>
 
-      <div v-for="(dada_posters, index) in dada_postersArray" :index="index" :key="dada_posters.index">
+      <div v-for="(dada_posters, index) in dada_postersArray" :index="index" class="item item--full" :key="dada_posters.index">
         <h3>{{ dada_posters.title }}</h3>
 
         <div class="explication" v-html="dada_posters.body"></div>

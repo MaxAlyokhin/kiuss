@@ -5,7 +5,7 @@
         «Strange posters»<br />Blueback, А0, 2018 <br /><br />A series of street posters (about 60 pieces of A0 format), which is, in fact, a brief manifesto for the project of
         <a href="/absurd_inscriptions">absurd inscriptions</a>.
       </div>
-      <div v-for="(strange_posters, index) in strange_postersArray" :index="index" :key="strange_posters.index">
+      <div v-for="(strange_posters, index) in strange_postersArray" :index="index" class="item item--full" :key="strange_posters.index">
         <h3>{{ strange_posters.title }}</h3>
 
         <div class="explication" v-html="strange_posters.ebody"></div>
@@ -20,7 +20,7 @@
         Постеры «Странно»<br />Блюбэк, А0, 2018 <br />Серия уличных постеров (было расклеено порядка 60 штук формата А0), представляющая собой, по сути, краткий манифест проекта
         <a href="/absurd_inscriptions">абсурдных надписей.</a>
       </div>
-      <div v-for="(strange_posters, index) in strange_postersArray" :index="index" :key="strange_posters.index">
+      <div v-for="(strange_posters, index) in strange_postersArray" :index="index" class="item item--full" :key="strange_posters.index">
         <h3>{{ strange_posters.title }}</h3>
 
         <div class="explication" v-html="strange_posters.body"></div>

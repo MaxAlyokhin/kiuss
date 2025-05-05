@@ -2,7 +2,7 @@
   <div class="sub-container">
     <div v-if="this.$store.state.languageMarker">
       <div class="annotation">A series of urban installation «Threads»<br />Cotton threads, 2017</div>
-      <div v-for="(threads, index) in threadsArray" :index="index" :key="threads.index">
+      <div v-for="(threads, index) in threadsArray" :index="index" class="item item--full" :key="threads.index">
         <div v-html="threads.body" class="explication"></div>
         <div class="img" v-lazy-container="{ selector: 'img' }">
           <img :data-src="threads.img" />
@@ -12,7 +12,7 @@
 
     <div v-else>
       <div class="annotation">Серия уличных инсталляций «Нити»<br />Хлопковые нити, 2017</div>
-      <div v-for="(threads, index) in threadsArray" :index="index" :key="threads.index">
+      <div v-for="(threads, index) in threadsArray" :index="index" class="item item--full" :key="threads.index">
         <div v-html="threads.body" class="explication"></div>
         <div class="img" v-lazy-container="{ selector: 'img' }">
           <img :data-src="threads.img" />

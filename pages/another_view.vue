@@ -4,7 +4,7 @@
       <div class="annotation">
         This series of photos aims to find some new information in rather prosaic things and landscapes and, perhaps, to turn everyday life into a kind of hobby.
       </div>
-      <div v-for="(another_view, index) in another_viewArray" :index="index" :key="another_view.index">
+      <div v-for="(another_view, index) in another_viewArray" :index="index" class="item item--full" :key="another_view.index">
         <h3>{{ another_view.title }}</h3>
 
         <div class="explication" v-html="another_view.body"></div>
@@ -19,7 +19,7 @@
       <div class="annotation">
         Эта серия фотографий ставит своей целью найти в довольно прозаических вещах и пейзажах какую-то новую информацию и, возможно, превратить повседневность в своего рода увлечение.
       </div>
-      <div v-for="(another_view, index) in another_viewArray" :index="index" :key="another_view.index">
+      <div v-for="(another_view, index) in another_viewArray" :index="index" class="item item--full" :key="another_view.index">
         <h3>{{ another_view.title }}</h3>
 
         <div class="explication" v-html="another_view.body"></div>
